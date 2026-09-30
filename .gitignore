@@ -1,0 +1,6 @@
+# Runtime and machine-local state must not enter this instructions repository.
+.omp/
+.harness/
+*.log
+__pycache__/
+node_modules/
