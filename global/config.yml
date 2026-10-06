@@ -1,0 +1,47 @@
+# Общие настройки OMP. Подключение: omp --config /полный/путь/к/omp-harness/global/config.yml
+# Учётные данные, локальные endpoints и согласия хранятся вне репозитория.
+modelRoles:
+  smol: openai-codex/gpt-6-luna:high
+  slow: openai-codex/gpt-6-astra:high
+  default: openai-codex/gpt-6.1-sol:medium
+  plan: openai-codex/gpt-6.1-sol:high
+  tiny: openai-codex/gpt-6-luna:auto
+  advisor: openai-codex/gpt-6.1-sol:high
+  task: openai-codex/gpt-6.1-sol:medium
+extendedContext: true
+providers:
+  openaiWebsockets: auto
+statusLine:
+  preset: custom
+  leftSegments:
+    - model
+    - path
+    - git
+  rightSegments:
+    - context_pct
+    - token_total
+    - cost
+    - status
+  contextLine: embedded
+  showHookStatus: false
+  compactThinkingLevel: false
+  transparent: false
+disabledExtensions:
+  - extension-module:orca-agent-status
+  - extension-module:orca-prefill
+  - extension-module:orca-titlebar-spinner
+  - skill:computer-use
+  - skill:find-skills
+  - skill:orca-cli
+  - skill:orchestration
+theme:
+  dark: titanium
+composer:
+  shape: claude
+  tokenRate: false
+memory:
+  backend: mnemopi
+codexResets:
+  autoRedeem: "no"
+completion:
+  notify: "off"
