@@ -1,4 +1,4 @@
-# Общие настройки OMP. Подключение: omp --config /полный/путь/к/omp-harness/global/config.yml
+# Общие настройки OMP. install.sh связывает пользовательский config.yml с этим файлом.
 # Учётные данные, локальные endpoints и согласия хранятся вне репозитория.
 modelRoles:
   smol: openai-codex/gpt-6-luna:high
