@@ -45,3 +45,7 @@ codexResets:
   autoRedeem: "no"
 completion:
   notify: "off"
+retry:
+  enabled: true
+  waitForUsageReset: true
+  modelFallback: false
